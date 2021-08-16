@@ -1,0 +1,24 @@
+.r {
+    background-color: rgb(97, 7, 15);
+    color: azure;
+    border-style: solid;
+    border-radius: 20px;
+    padding: 5px;
+  }
+  .p {
+    background-color: rgb(4, 11, 73);
+    color: azure;
+    border-style: solid;
+    border-radius: 20px;
+    padding: 5px;
+  }
+  .Y {
+    color: azure;
+  }
+  body{
+    background: #200122;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #6f0000, #200122);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #6f0000, #200122); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+  }
+  

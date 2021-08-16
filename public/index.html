@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <link rel="stylesheet" href="Css/Index.css"/>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyAWOstMfWE1ZY9cXw5Au8PS6yGY4hMHwoo",
+          authDomain: "tarea-316923.firebaseapp.com",
+          projectId: "tarea-316923",
+          storageBucket: "tarea-316923.appspot.com",
+          messagingSenderId: "363610830276",
+          appId: "1:363610830276:web:c7a55a489669f3e00c2091"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+      </script>
+
+  </head>
+  <body>
+    <div class="container">
+        <nav class="navbar navbar-dark bg-dark">
+            <span class="navbar-brand" id="nombreUsuario">Chat</span>
+            <div id="botones"></div>
+        </nav>
+
+        <main id="contenidoProtegido" class="mt-3" style="height: 75vh; overflow-y: scroll;"></main>
+
+        <form id="formulario">
+            <input type="text" class="form-control" placeholder="Enviar mensaje" id="inputChat">
+            <div class="input-group-append">
+                <button class="btn btn-primary" type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
